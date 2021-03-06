@@ -8,6 +8,10 @@ https://docs.djangoproject.com/en/3.1/howto/deployment/wsgi/
 """
 
 import os
+from dotenv import load_dotenv   #for python-dotenv method
+load_dotenv()                    #for python-dotenv method
+
+secret_key = os.environ.get('DJANGO_SECRET1')
 
 from django.core.wsgi import get_wsgi_application
 

@@ -1,7 +1,12 @@
-#!/usr/bin/env python
+#!C:\Egnyte\Private\cobyvardy\Other_Projects\Python\Smartsheet_Dropdown\smartsheet_dropdown_env\Scripts\python.exe
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+
+from dotenv import load_dotenv   #for python-dotenv method
+load_dotenv()                    #for python-dotenv method
+
+secret_key = os.environ.get('DJANGO_SECRET1')
 
 
 def main():
